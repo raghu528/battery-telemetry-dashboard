@@ -3,7 +3,7 @@ function StatusCards({ latest }) {
     return temp === null ? "Sensor Offline" : `${temp} °C`;
   };
 
-  const socColor = latest.soc < 20 ? "red" : "green";
+  const socColor = latest.soc < 5 ? "red" : "green";
 
   return (
     <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
